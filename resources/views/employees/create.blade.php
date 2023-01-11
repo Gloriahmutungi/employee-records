@@ -11,8 +11,8 @@
 <form action="{{ route('employees.store') }}" method="POST">
     @csrf
 <div class="row">
-   
-    <div class="col-xs-12 col-sm-12 col-md-12">
+   <div class="row">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Title:</label>
             <input type="text" class="form-control" placeholder="Title" name="title" required>
@@ -21,7 +21,7 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Firstname:</label>
             <input type="text" class="form-control" placeholder="Firstname" name="firstname" required>
@@ -30,7 +30,9 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+</div>
+<div class="row">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Lastname:</label>
             <input type="text" class="form-control" placeholder="Lastname" name="lastname" required>
@@ -39,10 +41,10 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Gender:</label>
-                <select name="gender" id="">
+                <select class="form-control" name="gender" id="">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
@@ -51,7 +53,9 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+</div>
+<div class="row">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Email:</label>
             <input type="text" class="form-control" placeholder="Email" name="email" required>
@@ -60,7 +64,7 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Phone:</label>
             <input type="text" class="form-control" placeholder="phone" name="phone" required>
@@ -69,7 +73,9 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+</div>
+<div class="row">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>designation:</label>
             <input type="text" class="form-control" placeholder="designation" name="designation" required>
@@ -78,7 +84,7 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>salary:</label>
             <input type="text" class="form-control" placeholder="salary" name="salary" required>
@@ -87,7 +93,9 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+    <div>
+ <div class="row">
+   <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Date of birth:</label>
             <input type="text" class="form-control" placeholder="Date of birth" name="date_of_birth" required>
@@ -96,6 +104,7 @@
             @endif
         </div>
     </div>
+</div>
 
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
         <button type="submit" class="btn btn-primary">Submit</button>

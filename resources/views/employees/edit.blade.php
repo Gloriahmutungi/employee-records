@@ -13,7 +13,8 @@
     @method('PUT')
  <input type="hidden" name="id" value="{{ $employeeuser->id }}" class="form-control">
 <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Title:</label>
             <input type="text" class="form-control" placeholder="Title" name="title" value="{{ $employeeuser->title }}" required>
@@ -22,7 +23,7 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Firstname:</label>
             <input type="text" class="form-control" placeholder="Firstname" name="firstname" value="{{ $employeeuser->firstname }}" required>
@@ -31,7 +32,9 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+</div>
+<div class="row">
+<div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Lastname:</label>
             <input type="text" class="form-control" placeholder="lastname" name="lastname" value="{{ $employeeuser->lastname }}" required>
@@ -40,16 +43,18 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+    <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Gender:</label>
-            <input type="text" class="form-control" placeholder="Firstname" name="firstname" value="{{ $employeeuser->firstname }}" required>
-            @if ($errors->has('firstname'))
-                <span class="text-danger">{{ $errors->first('firstname') }}</span>
+            <input type="text" class="form-control" placeholder="gender" name="gender" value="{{ $employeeuser->gender }}" required>
+            @if ($errors->has('gender'))
+                <span class="text-danger">{{ $errors->first('gender') }}</span>
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+</div>
+   <div class="row">
+     <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Email:</label>
             <input type="text" class="form-control" placeholder="Email Address" name="email" value="{{ $employeeuser->email }}" required>
@@ -58,7 +63,7 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+     <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Phone:</label>
             <input type="text" class="form-control" placeholder="Phone" name="phone" value="{{ $employeeuser->phone }}" required>
@@ -67,7 +72,9 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+    </div>
+    <div class="row" >
+     <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Designation:</label>
             <input type="text" class="form-control" placeholder="Designation" name="designation" value="{{ $employeeuser->designation }}" required>
@@ -76,7 +83,7 @@
             @endif
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
+     <div class="col-xs-6 col-sm-6 col-md-6">
         <div class="form-group">
             <label>Salary:</label>
             <input type="text" class="form-control" placeholder="salary" name="salary" value="{{ $employeeuser->salary }} " required>
@@ -84,6 +91,7 @@
                 <span class="text-danger">{{ $errors->first('salary') }}</span>
             @endif
         </div>
+    </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
         <button type="submit" class="btn btn-primary">Submit</button>
